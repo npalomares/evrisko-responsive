@@ -21,7 +21,7 @@
   <?php if( is_front_page() ) { ?>
     <div class="slideshow-wrap">
       <div class="slideshow container">
-        <?php echo do_shortcode('[gm_slideshow]'); ?>
+        <?php //echo do_shortcode('[gm_slideshow]'); ?>
       </div>
     </div>
     
