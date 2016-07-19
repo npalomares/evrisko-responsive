@@ -23,7 +23,7 @@
 define('DB_NAME', 'evriskosys');
 
 /** MySQL database username */
-define('DB_USER', 'evuser');
+define('DB_USER', 'evriskosys');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'hKJ56eeI00!AacM09g');
