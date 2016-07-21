@@ -10,35 +10,65 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 	margin-bottom: 0;
+	color: #CE6E19;
 }
 .banner {
-	background-color: transparent;
+	background-color: #2c2c2c;
 	border: none;
 	margin-bottom: 0;
 }
 .btn-primary {
 	padding: 10px 40px;
 }
-
-
-header { }
+a {
+	color: #CE6E19;
+}
+a:hover {
+    color: #DEB406;
+}
+a.navbar-brand img {
+	width: 60%;
+}
+#menu-primary-navigation {
+	padding-top: 25px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #CE6E19;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    /*color: #DEB406;*/
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #DEB406;
+    background-color: #2c2c2c;
+}
+ul.dropdown-menu {
+	background-color: #DEB406;
+}
+/*ul.dropdown-menu li a {
+	color: #CE6E19;
+}*/
 
 /*Home page and Interior page banners*/
 .hero-wrap { }
 
 .slideshow-wrap,
 .interior-banner-wrap {
-	background-color: #2c2c2c;
-	color: #FFF;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	background-color: #DEB406;
+	color: #CE6E19;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.slideshow {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 h2.front-banner,
 h2.banner {
 	font-size: 22px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	/*padding-top: 20px;*/
+	/*padding-bottom: 20px;*/
 }
 
 .wrap { 
@@ -49,7 +79,31 @@ h2.banner {
 
 
 /*Global Main Styles*/
-.main { }
+.main h1.page-title {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #CE6E19;
+}
+.main h2 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.main p {
+	margin-bottom: 25px;
+}
+.main img { 
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.main img[align="left"] {
+	margin-right: 15px;
+}
+.main img[align="right"] {
+	margin-left: 15px;
+}
+
+
+
 .page-header {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -67,7 +121,26 @@ body .page-header {
 
 
 aside { }
-
+aside h3 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CE6E19;
+} 
+aside ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+aside ul li a {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #CE6E19;
+	text-decoration: none;
+	color: #555;
+}
+aside ul li a:hover {
+	background-color: #CCC;
+	text-decoration: none;
+	color: #000;
+}
 
 
 /*Page Specific*/

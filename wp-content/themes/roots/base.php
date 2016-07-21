@@ -22,14 +22,15 @@
     <div class="slideshow-wrap">
       <div class="slideshow container">
         <?php //echo do_shortcode('[gm_slideshow]'); ?>
+        <img src="http://placehold.it/1170x300&text=Slide+One" class="img-responsive">
       </div>
     </div>
     
     <?php } else { ?>
 
     <div class="interior-banner-wrap">
-      <div class="interior-banner container">
-        <h2 class="banner text-center"><?php the_title(); ?></h2>
+      <div class="interior container">
+        <h2 class="text-center"><?php the_title(); ?></h2>
       </div>
     </div>
 
