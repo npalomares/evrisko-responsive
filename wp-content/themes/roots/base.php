@@ -21,8 +21,8 @@
   <?php if( is_front_page() ) { ?>
     <div class="slideshow-wrap">
       <div class="slideshow container">
-        <?php //echo do_shortcode('[gm_slideshow]'); ?>
-        <img src="http://placehold.it/1170x300&text=Slide+One" class="img-responsive">
+        <?php echo do_shortcode('[metaslider id=88]'); ?>
+        <!-- <img src="http://placehold.it/1170x300&text=Slide+One" class="img-responsive"> -->
       </div>
     </div>
     
