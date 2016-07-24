@@ -17,22 +17,21 @@
     }
   ?>
   
-  <div class="hero-wrap">
-  <?php if( is_front_page() ) { ?>
-    <div class="slideshow-wrap">
-      <div class="slideshow container">
-        <?php echo do_shortcode('[metaslider id=88]'); ?>
-        <!-- <img src="http://placehold.it/1170x300&text=Slide+One" class="img-responsive"> -->
+  <div class="wrapper">
+    <?php if( is_front_page() ) { ?>
+      <div class="slideshow-wrap">
+        <div class="slideshow container">
+          <?php echo do_shortcode('[metaslider id=88]'); ?>
+        </div>
       </div>
-    </div>
-    
+      
     <?php } else { ?>
 
-    <div class="interior-banner-wrap">
-      <div class="interior container">
-        <h2 class="text-center"><?php the_title(); ?></h2>
+      <div class="interior-banner-wrap">
+        <div class="interior container">
+          <h2 class="text-center"><?php the_title(); ?></h2>
+        </div>
       </div>
-    </div>
 
     <?php } ?>
 
@@ -52,6 +51,19 @@
       <?php endif; ?>
     </div><!-- /.content -->
   </div><!-- /.wrap -->
+
+
+
+<script>
+  $(document).ready(function() {
+    // Get the height of the .wrap
+    var setHeight = $('.wrapper').height();
+    // set the height of the sidebar to .wrap height
+    $('.sidebar').height(setHeight);
+  });
+
+</script>
+
 
   <?php get_template_part('templates/footer'); ?>
 

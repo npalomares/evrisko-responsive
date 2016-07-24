@@ -83,13 +83,20 @@ a.navbar-brand img {
 ul.dropdown-menu {
 	background-color: #FFF;
 }
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
 .dropdown-menu>li>a {
     color: #CE6E19;
 }
-
+.dropdown-menu>.active>a, 
+.dropdown-menu>.active>a:hover, 
+.dropdown-menu>.active>a:focus {
+    color: #DEB406;
+    background-color: transparent;
+}
 
 /*Home page and Interior page banners*/
-.hero-wrap { }
 
 .slideshow-wrap {
 	background-color: #F1F1F1;
@@ -108,6 +115,9 @@ ul.dropdown-menu {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+.interior-banner-wrap h2 {
+	text-transform: uppercase;
+}
 .slideshow {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -119,8 +129,8 @@ h2.banner {
 }
 
 .wrap { 
-	padding-top: 40px;
-	padding-bottom: 60px;
+	/*padding-top: 40px;*/
+	/*padding-bottom: 60px;*/
 	background-color: #FFF;
 }
 
@@ -130,6 +140,11 @@ h1.page-title {
 	margin-bottom: 25px;
 	padding-bottom: 15px;
 	border-bottom: 1px solid #CE6E19;	
+}
+
+.main {
+	padding-top: 40px;
+	padding-bottom: 60px;
 }
 .main h2.page-title {
 	margin-bottom: 15px;
@@ -184,7 +199,11 @@ body .page-header {
 
 
 
-aside { }
+aside { 
+	/*background-color: #F1F1F1;*/
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
 aside h3 {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #CE6E19;
@@ -208,7 +227,9 @@ aside ul li a:hover {
 
 
 /*Page Specific*/
-
+.contact .map p {
+	margin-bottom: 5px;
+}
 
 /*About Us Page*/
 body.about .left {
